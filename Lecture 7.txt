@@ -1,0 +1,121 @@
+Creating Objects :
+package CarStudy;
+class Car{
+	String name;
+	String color;
+	int No_plate;
+	char model;
+}
+public class CarStudy {
+
+	public static void main(String[] args) {
+		Car s = new Car();
+		s.name="polo";
+		s.color="red";
+		s.No_plate=1234;
+		s.model='A';
+		System.out.println(s.name);
+		System.out.println(s.color);
+		System.out.println(s.No_plate);
+		System.out.println(s.model);
+	}
+
+}
+
+
+
+Control Flow :
+
+
+package ResultChecker;
+class Student{
+	String name;
+	int marks;
+	void result(){
+		if(marks>40) {
+			System.out.println("pass");
+		}
+		else {
+			System.out.println("Fail");
+		}
+	}
+}
+public class Result {
+
+	public static void main(String[] args) {
+		Student s1=new Student();
+		s1.name="abhi";
+		s1.marks=98;
+		Student s2=new Student();
+		s2.name=null;
+		s2.marks=39;
+		s1.result();
+		s2.result();
+		
+
+	}
+
+}
+
+
+Nested if_else :
+
+
+package Nested_if_else;
+
+public class if_else {
+	int findMax(int a,int b,int c) {
+		if(a>b) {
+			if(a>c) {
+				return a;
+			}
+			else {
+				return c;
+			}
+		}
+		else {
+			if(b>c) {
+				return b;
+			}
+			else {
+				return c;
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		if_else nf = new if_else();
+		System.out.println(nf.findMax(34, 67, 12));
+
+	}
+
+}
+
+Switch Case :
+
+
+package Switch_Case;
+
+public class Switch {
+
+	public static void main(String[] args) {
+		int a=0;
+		switch(a) {
+		case 1 :
+			System.out.println("Hi i am 1");
+			break;
+		case 2 :
+			System.out.println("Hi i am 2");
+			break;
+		case 3 :
+			System.out.println("Hi i am 3");
+			break;
+		default :
+			System.out.println("Hi i am default");
+		}
+
+	}
+
+}
+
+
